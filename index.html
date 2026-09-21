@@ -41,6 +41,11 @@
 
         </nav>
 
+        <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <a href="#" class="join-button" id="discordButton">
             DISCORD
@@ -624,6 +629,25 @@
         });
 
 
+
+        const mobileMenuButton = document.getElementById("mobileMenuButton");
+        const mainNav = document.getElementById("main-nav");
+
+        if (mobileMenuButton && mainNav) {
+            mobileMenuButton.addEventListener("click", function () {
+                const isOpen = mainNav.classList.toggle("mobile-open");
+                mobileMenuButton.classList.toggle("open", isOpen);
+                mobileMenuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            });
+
+            mainNav.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", function () {
+                    mainNav.classList.remove("mobile-open");
+                    mobileMenuButton.classList.remove("open");
+                    mobileMenuButton.setAttribute("aria-expanded", "false");
+                });
+            });
+        }
 
         const discordButton = document.getElementById("discordButton");
         const discordPopup = document.getElementById("discordPopup");
