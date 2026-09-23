@@ -505,6 +505,10 @@ nav a.active::after {
 
     position: relative;
 
+    font-size: 27px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     z-index: 2;
 
     text-align: center;
@@ -586,7 +590,9 @@ nav a.active::after {
 
     color: #c9c9d8;
 
-    font-size: 18px;
+    font-size: 23px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
     line-height: 1.7;
 
@@ -615,7 +621,7 @@ nav a.active::after {
 
     color: #ffffff;
 
-    font-size: 20px;
+    font-size: 27px;
 
     font-weight: 800;
 
@@ -642,7 +648,7 @@ nav a.active::after {
 .page-content h2 {
     color: #ffffff;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
      line-height: 2.35;
 }
 
@@ -831,6 +837,8 @@ nav a.active::after {
     top: 135px;
     left: 50%;
     transform: translateX(-50%);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
     display: flex;
     align-items: center;
@@ -1354,4 +1362,64 @@ nav a.active::after {
     #youtube .youtube-member {
         width: 100%;
     }
+}
+
+
+/* ===== BARRE DE DÉFILEMENT GÉNÉRALE ===== */
+.page {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.page::-webkit-scrollbar {
+    width: 9px;
+}
+
+.page::-webkit-scrollbar-track {
+    background: rgba(2, 3, 19, 0.75);
+}
+
+.page::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        #3478ff,
+        #743bff
+    );
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(52, 120, 255, 0.8);
+}
+
+.page::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        180deg,
+        #4d8cff,
+        #8a5cff
+    );
+}
+
+.page {
+    scrollbar-width: thin;
+    scrollbar-color: #3478ff rgba(2, 3, 19, 0.75);
+}
+
+
+/* ===== ALIGNEMENT DE L'ONGLET À PROPOS DU CLAN ===== */
+#clan {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 150px 0 80px;
+}
+
+
+/* ===== ALIGNEMENT DE L'ONGLET YOUTUBE ===== */
+#youtube {
+    padding-top: 110px;
+}
+
+#youtube .youtube-title {
+    top: 95px;
+}
+
+#youtube .youtube-members {
+    transform: translateY(-40px);
 }
