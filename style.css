@@ -1423,3 +1423,65 @@ nav a.active::after {
 #youtube .youtube-members {
     transform: translateY(-40px);
 }
+
+/* ===== ALIGNEMENT YOUTUBE SUR MEMBRES ACTUELS ===== */
+#youtube {
+    padding: 150px 0 80px;
+}
+
+#youtube .youtube-content {
+    height: auto;
+    min-height: min-content;
+}
+
+#youtube .youtube-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+#youtube .youtube-members {
+    transform: none;
+}
+
+#youtube .youtube-content h5 {
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+/* ===== NAVIGATION MOBILE ===== */
+@media (max-width: 550px) {
+    .navbar {
+        height: auto;
+        min-height: 90px;
+        padding: 14px 16px;
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    #main-nav {
+        display: flex;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+
+    #main-nav a {
+        font-size: 11px;
+    }
+
+    #main-nav a.active::after {
+        bottom: -6px;
+    }
+
+    #membres,
+    #clan,
+    #youtube {
+        padding-top: 155px;
+    }
+}
