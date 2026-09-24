@@ -1551,3 +1551,72 @@ nav a.active::after {
         font-size: 17px;
     }
 }
+
+/* ===== CORRECTION MOBILE FORCEE ===== */
+/* Placée en dernier pour écraser les anciennes règles mobiles. */
+@media screen and (max-width: 900px) {
+    #clan .page-title h2,
+    #membres .page-title h2 {
+        font-size: 30px !important;
+        line-height: 1.15 !important;
+    }
+
+    #youtube .youtube-title h2,
+    #youtube .youtube-content h2 {
+        font-size: 30px !important;
+        line-height: 1.15 !important;
+    }
+
+    #clan .page-content {
+        font-size: 17px !important;
+    }
+
+    #clan .page-content > p:not(.page-text) {
+        font-size: 17px !important;
+        line-height: 1.45 !important;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #clan .page-text {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    #clan .page-text.clan-slogan {
+        font-size: 18px !important;
+    }
+
+    #youtube .youtube-content h5 {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #youtube .youtube-member h3 {
+        font-size: 22px !important;
+    }
+
+    #youtube .youtube-member h4 {
+        font-size: 15px !important;
+    }
+
+    #youtube .youtube-member a,
+    #youtube .youtube-member a span {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    #membres .member-number {
+        font-size: 30px !important;
+    }
+
+    #membres .member-card p {
+        font-size: 17px !important;
+    }
+}
