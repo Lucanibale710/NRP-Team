@@ -1365,7 +1365,6 @@ nav a.active::after {
 }
 
 
-/* ===== BARRE DE DÉFILEMENT GÉNÉRALE ===== */
 .page {
     overflow-y: auto;
     overflow-x: hidden;
@@ -1403,7 +1402,6 @@ nav a.active::after {
 }
 
 
-/* ===== ALIGNEMENT DE L'ONGLET À PROPOS DU CLAN ===== */
 #clan {
     align-items: flex-start;
     justify-content: center;
@@ -1411,7 +1409,6 @@ nav a.active::after {
 }
 
 
-/* ===== ALIGNEMENT DE L'ONGLET YOUTUBE ===== */
 #youtube {
     padding-top: 110px;
 }
@@ -1424,7 +1421,6 @@ nav a.active::after {
     transform: translateY(-40px);
 }
 
-/* ===== ALIGNEMENT YOUTUBE SUR MEMBRES ACTUELS ===== */
 #youtube {
     padding: 150px 0 80px;
 }
@@ -1452,7 +1448,7 @@ nav a.active::after {
     margin-bottom: 35px;
 }
 
-/* ===== NAVIGATION MOBILE ===== */
+
 @media (max-width: 550px) {
     .navbar {
         height: auto;
@@ -1486,23 +1482,19 @@ nav a.active::after {
     }
 }
 
-/* ===== TAILLES DE TEXTE SUR TÉLÉPHONE UNIQUEMENT ===== */
 @media (max-width: 550px) {
 
-    /* Titres principaux : À PROPOS DU CLAN / MEMBRES ACTUELS */
     .page-title h2 {
         font-size: 30px;
         line-height: 1.2;
     }
 
-    /* Titre YOUTUBE */
     #youtube .youtube-title h2,
     #youtube .youtube-content h2 {
         font-size: 30px;
         line-height: 1.2;
     }
 
-    /* Texte de À PROPOS DU CLAN */
     #clan .page-content {
         font-size: 17px;
     }
@@ -1518,19 +1510,16 @@ nav a.active::after {
         line-height: 1.2;
     }
 
-    /* Texte d'introduction YouTube */
     #youtube .youtube-content h5 {
         font-size: 16px;
         line-height: 1.4;
         padding: 0 15px;
     }
 
-    /* Noms des membres YouTube */
     #youtube .youtube-member h3 {
         font-size: 22px;
     }
 
-    /* Liens YouTube / guns.lol / Twitch / etc. */
     #youtube .youtube-member h4 {
         font-size: 15px;
     }
@@ -1542,7 +1531,6 @@ nav a.active::after {
         word-break: break-word;
     }
 
-    /* Cartes des membres */
     #membres .member-number {
         font-size: 30px;
     }
